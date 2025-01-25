@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef0f2;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #061a40;
+    color: white;
+    padding: 20px 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #edf2f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.cart-header, .cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 3px solid #ddd;
+}
+
+.cart-header {
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.quantity button {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.quantity button:hover {
+    background-color: #457b9d;
+}
+
+.quantity-value {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Summary Section */
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.checkout-btn {
+    background-color: #2e294e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #457b9d;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Allows it to stay at the bottom dynamically */
+    font-size: 14px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Ordering Website</title>
+    <link rel="stylesheet" href="order.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Track Your Order</h1>
+    </header>
+
+    <main class="tracking-container">
+        <section>
+            <p>Enter your Order ID to track your order status: </p>
+            <form onsubmit="trackOrder(event)">
+                <input type="text" id="order-id" placeholder="Enter Order ID" required>
+                <button type="submit">Track Order</button>
+            </form>
+            <div id="order-status" class="status"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            At Cake Heaven, we believe every celebration deserves the perfect cake.<br>
+            
+            Located in the heart of Cake
+            City, we specialize in crafting exquisite cakes that combine flavor and Whether it is a birthday,wedding, or a simple sweet craving, our bakers use the finest ingredients to create moments of joy for you
+            and your loved ones. With a wide range of flavors and designs, we are committed to making every occasion
+            extra special.<br>
+            
+            Visit us at 123 Sweet Avenue <br> call us at +1-800-CAKES for your next delicious
+            creation.<br>
+            
+            &copy; 2024 Cake heaven. All Rights Reserved.</p>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

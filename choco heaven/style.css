@@ -1,0 +1,361 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+    color: #1f1f1f;
+    
+}
+
+/* Header Styling */
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    color: #f8f9fa; /* Default text color */
+    font-family: "Roboto Slab", serif;
+}
+
+h1 i {
+    font-size: 40px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Space between the icon and the text */
+    background: linear-gradient(45deg, #ff6347, #ff1493, #ff0, #32cd32, #1e90ff);-webkit-background-clip: text;
+    color: transparent;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    flex: 1; /* Align the h1 to the left */
+    margin: 0;
+}
+.search-box {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 10px 20px; /* Add padding to make it wider */
+    border-radius: 50px 0 0 50px; /* Rounded left side */
+    border: 2px solid #ccc; /* Border for the input */
+    outline: none; /* Remove outline */
+    font-size: 16px;
+    width: 250px; /* Adjust width to make it look more oval */
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #893168;
+    color: #e1e5f2;
+    border: 2px solid #fbfffe;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0; /* Rounded right side */
+    margin-left: -2px; /* Overlap with the input slightly */
+}
+
+.search-box input:focus {
+    border-color: #fbfffe; /* Change border color on focus */
+}
+
+.search-box button:hover {
+    background-color: #9d9385;
+}
+
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+nav a i {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #9d9385;
+}
+
+/* Cake Categories, Best Sellers, Ordered by Flavor Sections */
+.categories, .best-sellers, .ordered-by-flavor {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Cake Categories Section Color */
+.categories {
+    background-color: #f1faee;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+}
+   
+   
+
+
+/* Best Seller Cakes Section Color */
+.best-sellers {
+    background-color: #f1faee;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+}
+
+/* Ordered by Flavor Section Color */
+.ordered-by-flavor {
+    background-color: #f1faee; 
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+}
+
+
+.category-grid, .cake-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+}
+
+.category-item, .cake-item {
+    width: 200px;
+    text-align: center;
+}
+
+.category-item img, .cake-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+/* Hover effect for cake items */
+.category-item:hover, .cake-item:hover {
+    transform: scale(1.12);
+    transition: transform 0.1s ease;
+}
+
+
+/* Cake Slider */
+.cake-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform  0.5s  ease-in-out;
+}
+
+.slider-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ebf2fa;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    
+}
+
+.slider-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* General Card Styles */
+.cake-card {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.cake-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cake-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Rating Styles */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 18px;
+}
+
+.rating-number {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.reviews-count {
+    font-size: 14px;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* Grid Styles */
+.category-grid, .cake-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.category-item, .cake-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Styles */
+.categories, .best-sellers, .ordered-by-flavor {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.categories, .best-sellers, .ordered-by-flavor {
+    padding: 20px;
+    text-align: left; /* Align content to the left */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.view-all {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000f08;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+
+
+}
+
+.view-all:hover {
+    background-color: #726151;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+/* Footer Styling */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+

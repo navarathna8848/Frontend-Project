@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Ordering Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fa-solid fa-cake-candles"></i>Cake Heaven</h1>
+
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search cakes...">
+                <button onclick="searchCakes()">Search</button>
+            </div>
+
+            <nav>
+                <a href="order.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <br>Track Order
+                </a>
+                <a href="#gift">
+                    <i class="fa-solid fa-gifts"></i>
+                    <br>Gift Finder
+                </a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <br>Cart
+                </a>
+                <a href="signup.html">
+                    <i class="fa-solid fa-user"></i>
+                    <br>Sign up
+                </a>
+                <a href="#more">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <br>More
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Body Section -->
+    <main>
+
+        <!-- Cake Slider -->
+        <section class="cake-slider">
+            <div class="slider-container">
+                <img src="https://imgcdn.floweraura.com/chocolate-cake-landingpage-fa-desktop.jpg?tr=w-1583,dpr-1.5,q-70"
+                    alt="Cake 1" class="slider-image">
+                <img src="https://imgcdn.floweraura.com/birthday-landingpage-fa-desktop.jpg?tr=w-1583,dpr-1.5,q-70"
+                    alt="Cake 2" class="slider-image">
+                <img src="https://imgcdn.floweraura.com/mini-cake-landingpage-fa-desktop.jpg?tr=w-1583,dpr-1.5,q-70"
+                    alt="Cake 3" class="slider-image">
+            </div>
+            <div class="slider-controls">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <div>
+
+
+            <!-- Cake Categories -->
+            <section class="categories">
+                <h2>Cake Categories</h2>
+                <p class="description">Explore our wide variety of cake categories for every occasion. Choose the perfect one to surprise your loved ones!</p>
+                <div class="category-grid">
+                    <div class="category-item">
+                        <div class="cake-card">
+                            <img src="https://imgcdn.floweraura.com/photo_cake_12.jpg" alt="Photo Cake">
+                            <p>Photo Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.5</span>
+                                <p class="reviews-count">(120 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWD_YfmZb7AvCn5I9lxPNx-kkpHRj_QzRj8w&s"
+                                alt="Design Cake">
+                            <p>Design Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.8</span>
+                                <p class="reviews-count">(150 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYT97bod7raypbZ5HSmEuXMNw6dhFaV1OLtg&s"
+                                alt="Anniversary Cake">
+                            <p>Anniversary Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.7</span>
+                                <p class="reviews-count">(200 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUijbEYd8y7uWGmx1TFWF6GrYPA54_ADeoDg&s"
+                                alt="Birthday Cake">
+                            <p>Birthday Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.6</span>
+                                <p class="reviews-count">(180 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-all">View All</button>
+            </section>
+
+            <!-- Best Seller Cakes -->
+            <section class="best-sellers">
+                <h2>Best Seller Cakes</h2>
+                <p class="description">Our best-selling cakes are loved by all! Check out these fan favorites.</p>
+                <div class="cake-grid">
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-H9QAQJEaAGJ8RXq1ODJH3N_j-hzQ4tG5zg&s"
+                                alt="Chocolate Truffle">
+                            <p>Chocolate Truffle</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.9</span>
+                                <p class="reviews-count">(300 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQatGfewt-7jhpl78bpmZp5ks0wWDhdlRmE9Q&s"
+                                alt="Red Velvet Cake">
+                            <p>Red Velvet Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.8</span>
+                                <p class="reviews-count">(250 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHIShqp4IQthtO_ZZNTQJB1yIbfm30SW6HQ&s"
+                                alt="Pista Cake">
+                            <p>Pista Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.2</span>
+                                <p class="reviews-count">(145 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-all">View All</button>
+            </section>
+
+            <!-- Ordered by Flavor -->
+            <section class="ordered-by-flavor">
+                <h2>Ordered by Flavors</h2>
+                <p class="description">Choose from the most popular flavors! Delicious and irresistible cakes to satisfy your cravings.</p>
+                <div class="cake-grid">
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvT501babc-9ga2v20ClMnWIHdi_wMtm5sQ&s"
+                                alt="Vanilla Cake">
+                            <p>Vanilla Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.4</span>
+                                <p class="reviews-count">(100 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uGK7xWHId3x7jZiv2qO2oSivQj_nkevAAw&s"
+                                alt="Chocolate Cake">
+                            <p>Chocolate Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.6</span>
+                                <p class="reviews-count">(130 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6qU7Brd4_hWGnf31fQz_BCk9fUUsLMLvmg&s"
+                                alt="Butterscotch Cake">
+                            <p>Butterscotch Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.8</span>
+                                <p class="reviews-count">(180 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cake-item">
+                        <div class="cake-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjNmfh5wBcwMdMd1XDraIEAty52HuaEz0rJw&s"
+                                alt="Strawberry">
+                            <p>Strawberry Cake</p>
+                            <div class="rating">
+                                <span class="stars">&#9733;</span>
+                                <span class="rating-number">4.1</span>
+                                <p class="reviews-count">(170 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-all">View All</button>
+            </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            At Cake Heaven, we believe every celebration deserves the perfect cake.<br>
+            
+            Located in the heart of Cake
+            City, we specialize in crafting exquisite cakes that combine flavor and Whether it is a birthday,wedding, or a simple sweet craving, our bakers use the finest ingredients to create moments of joy for you
+            and your loved ones. With a wide range of flavors and designs, we are committed to making every occasion
+            extra special.<br>
+            
+            Visit us at 123 Sweet Avenue <br> call us at +1-800-CAKES for your next delicious
+            creation.<br>
+            
+            &copy; 2024 Cake heaven. All Rights Reserved.</p>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
