@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Navya Antiques</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Navya Antiques</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">HOME</a></p>
+            <p class="navbar-link"><a href="collections.html">COLLECTIONS</a></p>
+            <p class="navbar-link"><a href="contact.html">CONTACT</a></p>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please fill out the form below and we’ll get back to you as soon as possible.</p>
+
+        <form action="submit_contact_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Enter the subject">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Write your message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Navya Antiques | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
